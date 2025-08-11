@@ -41,7 +41,7 @@ fast_audio_folder = "num_fast/"
 os.makedirs(slow_audio_folder, exist_ok=True)
 os.makedirs(fast_audio_folder, exist_ok=True)
 
-FAST
+# FAST
 for i in range(0, 1000):
     speech = gTTS(text=str(i),lang="de", slow=False)
     speech.save(fast_audio_folder + str(i) + ".mp3")
